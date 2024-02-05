@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffe8f1;
+}
+
+.header_text,
+.text {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff4081;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif_container img {
+  width: 70%;
+  height: auto;
+  background-color: transparent;
+}
