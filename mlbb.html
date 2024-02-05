@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="mlbb.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Will you be my Valentine?</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://media.tenor.com/1kh8KLIMh7wAAAAi/mobile-legends-bang-bang.gif"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        <script>
+          function nextPage() {
+            window.location.href = 'mlbb_yes.html';
+          }
+
+          function moveButton() {
+            var button = document.getElementById('noButton');
+            var x = Math.random() * (window.innerWidth - button.offsetWidth);
+            var y = Math.random() * (window.innerHeight - button.offsetHeight);
+
+            x = Math.max(
+              0,
+              Math.min(x, window.innerWidth - button.offsetWidth)
+            );
+            y = Math.max(
+              0,
+              Math.min(y, window.innerHeight - button.offsetHeight)
+            );
+
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
