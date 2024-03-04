@@ -6,17 +6,30 @@
   <body>
     <div class="container">
       <div>
-        <h1 class="header_text">Would you be my Valentine?</h1>
+        <h1 class="header_text">Would you go out with me??</h1>
       </div>
       <div class="gif_container">
-        <img src="https://media.giphy.com/media/uTAFTGP3B4QvUoOikX/giphy.gif" />
+        <img
+          src="https://media.tenor.com/Cc0T5I_BazcAAAAi/genshin-genshin-impact.gif"
+        />
       </div>
       <div class="buttons">
-        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-        <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        <button class="btn" id="yesButton" onclick="moveToYes()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveToNo()"
+        >
+          No
+        </button>
         <script>
-          function nextPage() {
+          function moveToYes() {
             window.location.href = 'yes.html';
+          }
+
+          function moveToNo() {
+            window.location.href = 'no.html';
           }
 
           function moveButton() {
